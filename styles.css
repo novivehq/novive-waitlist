@@ -1,0 +1,137 @@
+:root {
+  --midnight: #0A1A40;
+  --electric: #3A7DFF;
+  --white: #F9FAFC;
+  --green: #10B981;
+  --orange: #F59E0B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--white);
+  color: var(--midnight);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Sora', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  background: var(--midnight);
+  padding: 1rem 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--electric);
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-large {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.hero {
+  padding: 4rem 0;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.subhead {
+  font-size: 1.1rem;
+}
+
+.trust-badge {
+  color: var(--orange);
+  margin-top: 1rem;
+}
+
+.features-grid,
+.benefits-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li::before {
+  content: "✓ ";
+  color: var(--green);
+}
+
+.waitlist {
+  background: var(--midnight);
+  color: white;
+  padding: 4rem 0;
+}
+
+.waitlist input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background: var(--midnight);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+/* Social icons in footer */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #3A7DFF;
+  font-size: 1.8rem; /* icon size */
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-links a:hover {
+  color: #1a5edb; /* darker blue on hover */
+  transform: scale(1.3); /* slight zoom on hover */
+}
